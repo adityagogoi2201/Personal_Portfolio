@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: #111;
+}
+.sidebar {
+    position: absolute;
+    background-color: rgb(45, 45, 45);
+    width: 300px;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebargo {
+    transform: translate(-330px, 0px);
+    position: absolute;
+}
+
+.sidebar .user {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .user img {
+    height: 10rem;
+    width: 10rem;
+    margin-top: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container .sidebar .user .name {
+    font-size: 33px;
+    color: rgb(0, 255, 234);
+    text-align: center;
+}
+
+.container .sidebar .user .post {
+    font-size: 22px;
+    text-align: center;
+    color: #eee;
+}
+
+.sidebar nav {
+    padding: 25px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 25px;
+    padding: 8px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    width: 90vw;
+
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    height: 51vh;
+    width: 80vw;
+    margin: 100px auto;
+    justify-content: space-around;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    padding: 0 5rem;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.hello {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.Name {
+    color: rgb(0, 255, 234);
+    font-size: 43px;
+}
+
+.about {
+    color: white;
+    font-size: 24px;
+}
+
+.buttons {
+    margin-top: 12px;
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 21px;
+    color: white;
+    background-color: rgb(0, 255, 234);
+    font-size: 10px;
+    font-weight: bold;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(0, 255, 234);
+    background-color: white;
+}
+
+.btn-sm {
+    padding: 8px;
+    font-size: 13px;
+}
+
+.contactform {
+    padding: 0px 30px;
+    padding-top: 30px;
+}
+
+.contactform .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactform h1 {
+    color: white;
+    text-align: center;
+}
+
+.contactform .row .content {
+    color: rgb(0, 255, 234);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactform .row .content .title {
+    font-size: 30px;
+}
+
+.contactform form div {
+    padding: 7px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 30vw;
+    border-radius: 6px;
+    margin: 6px 0px;
+    padding: 3px;
+}
+
+.form-label {
+    color: rgb(0, 255, 234);
+}
+.education h1 {
+    color: rgb(0, 255, 234);
+    text-align: center;
+    margin-top: 16px;
+    font-size: 34px;
+}
+.education .box-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    padding-top: 70px;
+}
+.education .box-container .box {
+    width: 14rem;
+    margin: 1rem 24px;
+    padding-left: 3rem;
+}
+.education .box-container .box span {
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 0.5rem 1.5rem;
+}
+.education .box-container .box h3 {
+    font-size: 1.2rem;
+    color: rgb(0, 255, 234);
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p {
+    font-size: 1.1rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+.education .box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    font-size: 2.1rem;
+    color: rgb(0, 255, 234);
+}
+.aboutsection {
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 6rem;
+    flex-direction: column;
+}
+
+.aboutsection h1 {
+    color: rgb(0, 255, 234)
+}
+
+.aboutsection h2 {
+    margin-top: 8px;
+    color: rgb(0, 255, 234);
+}
+
+.aboutsection p {
+    margin-top: 12px;
+    color: white;
+}
+
+.aboutsection li {
+    list-style: none;
+    color: white;
+}
+
+.skillcontainer .skills {
+
+    height: 7px;
+    background-color: rgb(0, 255, 234);
+}
+
+.hundred {
+    width: 160px;
+}
+
+.eighty {
+    width: 120px;
+}
+
+.fifty {
+    width: 80px;
+}
+
+.thirty {
+    width: 40px;
+}
+.hamburger{
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    cursor: pointer;
+}
+.ham{
+    position: absolute;
+}
+.cross{
+    margin-left: 250px;
+
+}
+.bar {
+    height: 4px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-2px);
+}
+
+#bar3 {
+    transform: translateY(2px);
+}
+.portfolio .heading{
+    color: rgb(0, 255, 234);
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
+    margin-top: 22px;
+}
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+.portfolio .box-container .box{
+    height: 18rem;
+    width:18rem;
+    margin:2rem;
+}
+.portfolio .box-container .box p{
+    color: white;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+@media (max-width: 1025px) {
+    .education .box-container .box span{
+        padding: 0.5rem 0.5rem;
+    }
+}
+@media (max-width: 934px) {
+    .education .box-container .box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 622px) {
+    .education .box-container{
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    .contactform .row .content{
+        margin-left: 62px;
+    }
+    .contactform .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 538px) {
+    .education h1 {
+        padding-left: 50px;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contactform h1{
+        padding-left: 37px;
+        margin-top: 22px;
+    }
+    .contactform .row .content{
+        margin-left: 42px;
+    }
+    .contactform .row .content h3{
+        font-size: 12px;
+    }
+    .portfolio .box-container .box{
+        height: 12rem;
+    }
+}
+@media (max-width: 450px) {
+    .portfolio .box-container .box{
+        height: 10rem;
+    }
+    .portfolio .box-container{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 300px) {
+    .hamburger .cross{
+        margin-left: 230px;
+    }
+    .portfolio .heading{
+        margin-top: 40px;
+    }
+    
+}
